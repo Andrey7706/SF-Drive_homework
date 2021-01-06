@@ -61,6 +61,14 @@ ul, ol {
     margin: 0 auto;
 }
 
+.content-text {
+    max-width: 925px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .header-content {
     min-height: 90px;
     display: flex;
@@ -130,14 +138,6 @@ ul, ol {
     width: 100%;
     height: auto;
     margin-bottom: 61px;
-}
-
-.intro-text {
-    max-width: 925px;
-    margin: 0 auto;
-    font-size: 24px;
-    line-height: 1.5;
-    text-align: center;
 }
 
 .contacts {
@@ -284,6 +284,75 @@ ul, ol {
     opacity: 0.4;
 }
 
+.question-content {
+    padding: 80px 40px 60px;
+}
+
+.question-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 61px;
+}
+
+.collapsible {
+    padding-bottom: 106px;
+}
+
+.collapsible-set {
+    max-width: 1066px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 147.3%;
+    color: #1B1B1B;
+    padding: 0 20px;
+}
+
+.collapsible-button {
+    width: 100%;
+    background: #F7F7F8;
+    padding: 19px 55px 18px 22px;
+    margin-bottom: 14px;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 147.3%;
+    text-align: left;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.collapsible-content {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    max-height: 0;
+}
+
+.collapsible-inner {
+    padding: 6px 22px 40px;
+}
+
+.collapsible-button.active {
+    background: rgba(97, 161, 153, 0.15);
+    color: #61A199;
+}
+
+.collapsible-button::after {
+    content: url(/img/chevron-down.png);
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+}
+  
+.collapsible-button.active::after {
+    content: url(/img/chevron-up.png);
+}
+
 @media screen and (max-width: 991px) {
     .team-content {
         padding: 80px 50px 60px;
@@ -299,6 +368,10 @@ ul, ol {
     .h2 {
         font-size: 36px;
         margin-bottom: 30px;
+    }
+
+    .content-text {
+        font-size: 20px;
     }
 
     .header-content {
@@ -318,16 +391,12 @@ ul, ol {
     }
 
     .intro-content {
-        padding: 50px 20px;
+        padding: 40px 20px;
     }
 
     .intro-img {
         margin-bottom: 40px;
         max-width: 330px;
-    }
-
-    .intro-text {
-        font-size: 20px;
     }
 
     .contacts-content {
@@ -375,6 +444,27 @@ ul, ol {
     .footer-content {
         padding: 30px 20px;
     }
+
+    .question-content {
+        padding: 40px 20px 30px;
+    }
+
+    .question-img {
+        margin-bottom: 40px;
+        max-width: 300px;
+    }
+
+    .collapsible {
+        padding-bottom: 80px;
+    }
+
+    .collapsible-set {
+        font-size: 16px;
+    }
+
+    .collapsible-button {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 479px)  {
@@ -388,16 +478,12 @@ ul, ol {
         margin-bottom: 20px;
     }
 
-    .intro-content {
-        padding: 40px 20px;
+    .content-text {
+        font-size: 16px;
     }
 
     .intro-img {
         max-width: 268px;
-    }
-
-    .intro-text {
-        font-size: 16px;
     }
 
     .contacts-content {
@@ -462,6 +548,39 @@ ul, ol {
 
     .footer-copy {
         margin-bottom: 10px;
+    }
+
+    .question-img {
+        max-width: 242px;
+    }
+
+    .collapsible {
+        padding-bottom: 36px;
+    }
+
+    .collapsible-set {
+        font-size: 14px;
+    }
+
+    .collapsible-button {
+        padding: 14px 40px 15px 20px;
+        font-size: 14px;
+    }
+
+    .collapsible-inner {
+        padding: 5px 20px 20px;
+    }
+
+    .collapsible-button::after {
+        content: url(/img/chevron-down-min.png);
+        right: 10px;
+        top: calc(50% - 13px);
+        width: 26px;
+        height: 26px;
+    }
+      
+    .collapsible-button.active::after {
+        content: url(/img/chevron-up-min.png);
     }
 }
 
