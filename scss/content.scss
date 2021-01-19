@@ -1,0 +1,342 @@
+@import "variables";
+
+.intro {
+    &-content {
+        padding: 80px 40px;
+    }
+    
+    &-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 397px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 61px;
+    }
+}
+
+.contacts {
+    background-color: $colorGreyLight;
+    &-content {
+        padding: 80px 40px 104px;
+    }
+    &-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &-item {
+        max-width: 264px;
+        margin: 0 69px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        &:not(:last-child) {
+            &::before{
+                content: '';
+                width: 1px;
+                height: 62px;
+                position: absolute;
+                background-color: #C8C8CF;
+                top: -3px;
+                right: -68px;
+            }
+        }
+    }
+    &-descr {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $colorGreyDark;
+        margin-bottom: 6px;
+    }
+    
+    &-link {
+        font-size: 20px;
+        line-height: 1.5;
+        color: $colorBlack;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 0.2s;
+        &:hover {
+            border-bottom-color: $colorBlack;
+        }
+    }
+}
+
+.team {
+    &-content {
+        padding: 80px 100px 60px;
+    }
+    &-flex {
+        padding-top: 12px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &-item {
+        max-width: 196px;
+        width: 100%;
+        min-height: 261px;
+        margin: 0 33px 60px;
+        text-align: center;
+        transition: 0.2s;
+        &:hover .team-img {
+            transition: 0.2s;
+            filter: grayscale(0.6);
+        }
+    }
+    &-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 180px;
+        overflow: hidden;
+        margin: 0 auto 23px;
+    }
+    &-name {
+        font-size: 20px;
+        font-weight: 500;
+        color: $colorBlack;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    &-skill {
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: $colorGray;
+    }
+}
+
+.question {
+    &-content {
+        padding: 80px 40px 60px;
+    }
+    &-img {
+        display: block;
+        margin: 0 auto;
+        max-width: 360px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 61px;
+    }
+}
+
+.collapsible {
+    padding-bottom: 106px;
+    &-set {
+        max-width: 1066px;
+        margin: 0 auto;
+        font-size: 20px;
+        line-height: 147.3%;
+        color: $colorMain;
+        padding: 0 20px;
+    }
+    &-button {
+        width: 100%;
+        background: #F7F7F8;
+        padding: 19px 55px 18px 22px;
+        margin-bottom: 14px;
+        border-radius: 6px;
+        font-size: 20px;
+        line-height: 147.3%;
+        text-align: left;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        &.active {
+            background: rgba(97, 161, 153, 0.15);
+            color: $colorCollapsible;
+            &::after {
+                content: url(/img/chevron-up.png);
+            }
+        }
+        &::after {
+            content: url(/img/chevron-down.png);
+            position: absolute;
+            right: 20px;
+            top: calc(50% - 16px);
+            width: 32px;
+            height: 32px;
+        }
+    }
+    &-content {
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        max-height: 0;
+    }
+    &-inner {
+        padding: 6px 22px 40px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .team {
+        &-content {
+            padding: 80px 50px 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro {
+        &-content {
+            padding: 40px 20px;
+        }
+        &-img {
+            margin-bottom: 40px;
+            max-width: 330px;
+        }
+    }
+    .contacts {
+        &-content {
+            padding: 60px 15px 75px;
+        }
+        &-flex {
+            flex-direction: column;
+        }
+        &-item::before {
+            &:not(:last-child) {
+                &::before{
+                    content: none;
+                }
+            }
+        }
+    }
+    .team {
+        &-content {
+            padding: 60px 20px 30px;
+        }
+        &-item {
+            margin: 0 20px 40px;
+            min-height: 200px;
+            max-width: 180px;
+        }
+        &-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 130px;
+            margin-bottom: 20px;
+        }
+        &-img {
+            img {
+                width: 130px;
+            }
+        }
+        &-name {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        &-skill {
+            font-size: 13px;
+        }
+    }
+    .question {
+        &-content {
+            padding: 40px 20px 30px;
+        }
+        &-img {
+            margin-bottom: 40px;
+            max-width: 300px;
+        }
+    }
+    .collapsible {
+        padding-bottom: 80px;
+        &-set {
+            font-size: 16px;
+        }
+        &-button {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .intro {
+        &-img {
+            max-width: 268px;
+        }
+    }
+    .contacts {
+        &-content {
+            padding: 40px 20px 40px;
+        }
+        &-item {
+            margin: 0;
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+        &-descr {
+            font-size: 12px;
+            margin-bottom: 5px;
+        }
+        &-link {
+            font-size: 14px;
+        }
+    }
+    .team {
+        &-content {
+            padding: 40px 20px 30px;
+        }
+        &-flex {
+            padding-top: 10px;
+        }
+        &-item {
+            margin: 0 0 30px;
+            min-height: 138px;
+            max-width: 167px;
+        }
+        &-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 80px;
+            margin-bottom: 20px;
+        }
+        &-img {
+            img {
+                width: 80px;
+            }
+        }
+        &-name {
+            font-size: 16px;
+            margin-bottom: 1px;
+        }
+        &-skill {
+            font-size: 12px;
+        }
+    }
+    .question {
+        &-img {
+            max-width: 242px;
+        }
+    }
+    .collapsible {
+        padding-bottom: 36px;
+        &-set {
+            font-size: 14px;
+        }
+        &-button {
+            padding: 14px 40px 15px 20px;
+            font-size: 14px;
+        }
+        &-inner {
+            padding: 5px 20px 20px;
+        }
+        &-button {
+            &::after {
+                content: url(/img/chevron-down-min.png);
+                right: 10px;
+                top: calc(50% - 13px);
+                width: 26px;
+                height: 26px;
+            }
+            &.active {
+                &::after {
+                    content: url(/img/chevron-up-min.png);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sf-drive_homework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss/ -o css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrey7706/SF-Drive_homework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrey7706/SF-Drive_homework/issues"
+  },
+  "homepage": "https://github.com/Andrey7706/SF-Drive_homework#readme",
+  "description": ""
+}
