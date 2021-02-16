@@ -11,9 +11,14 @@ module.exports = {
         rules: [
             {
                 test: /\.scss$/,
+                test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     'style-loader',
                     miniCss.loader,
+                    {
+                        loader: 'file-loader',
+                        options: { outputPath: 'img' }
+                    },
                     {
                         loader: 'css-loader',
                         options: { sourceMap: true }
