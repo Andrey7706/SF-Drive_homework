@@ -147,11 +147,11 @@
             background: rgba(97, 161, 153, 0.15);
             color: $colorCollapsible;
             &::after {
-                content: url(/img/chevron-up.png);
+                content: url(../img/chevron-up.png);
             }
         }
         &::after {
-            content: url(/img/chevron-down.png);
+            content: url(../img/chevron-down.png);
             position: absolute;
             right: 20px;
             top: calc(50% - 16px);
@@ -324,7 +324,7 @@
         }
         &-button {
             &::after {
-                content: url(/img/chevron-down-min.png);
+                content: url(../img/chevron-down-min.png);
                 right: 10px;
                 top: calc(50% - 13px);
                 width: 26px;
@@ -332,7 +332,7 @@
             }
             &.active {
                 &::after {
-                    content: url(/img/chevron-up-min.png);
+                    content: url(../img/chevron-up-min.png);
                 }
             }
         }
