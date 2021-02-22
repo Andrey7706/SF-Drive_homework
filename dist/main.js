@@ -1,43 +1,34 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
-
-/***/ "../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss":
-/*!**************************************************************************************************************************************************************************************************************************************!*\
-  !*** ../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
-  \**************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("// extracted by mini-css-extract-plugin\n    if(true) {\n      // 1613948161591\n      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ \"../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js\")(module.id, {\"publicPath\":\"F:\\\\Skillfactory\\\\SF-Drive_homework\\\\dist\",\"esModule\":false,\"locals\":false});\n      module.hot.dispose(cssReload);\n      module.hot.accept(undefined, cssReload);\n    }\n  \n\n//# sourceURL=webpack:///./scss/main.scss?../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet%5B1%5D.rules%5B4%5D.use%5B1%5D!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./scss/main.scss":
-/*!************************!*\
-  !*** ./scss/main.scss ***!
-  \************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js!../../node_modules/resolve-url-loader/index.js!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ \"../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss\");\n/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n\n            \n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default()), options);\n\n\nif (true) {\n  if (!(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals) || module.hot.invalidate) {\n    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {\n  if (!a && b || a && !b) {\n    return false;\n  }\n\n  var p;\n\n  for (p in a) {\n    if (isNamedExport && p === 'default') {\n      // eslint-disable-next-line no-continue\n      continue;\n    }\n\n    if (a[p] !== b[p]) {\n      return false;\n    }\n  }\n\n  for (p in b) {\n    if (isNamedExport && p === 'default') {\n      // eslint-disable-next-line no-continue\n      continue;\n    }\n\n    if (!a[p]) {\n      return false;\n    }\n  }\n\n  return true;\n};\n    var oldLocals = (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals);\n\n    module.hot.accept(\n      /*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js!../../node_modules/resolve-url-loader/index.js!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ \"../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss\",\n      __WEBPACK_OUTDATED_DEPENDENCIES__ => { /* harmony import */ _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js!../../node_modules/resolve-url-loader/index.js!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ \"../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js!../node_modules/resolve-url-loader/index.js!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss\");\n/* harmony import */ _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__);\n(function () {\n        if (!isEqualLocals(oldLocals, (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals), undefined)) {\n                module.hot.invalidate();\n\n                return;\n              }\n\n              oldLocals = (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals);\n\n              update((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default()));\n      })(__WEBPACK_OUTDATED_DEPENDENCIES__); }\n    )\n  }\n\n  module.hot.dispose(function() {\n    update();\n  });\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_node_modules_resolve_url_loader_index_js_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals) || {});\n\n//# sourceURL=webpack:///./scss/main.scss?");
-
-/***/ }),
 
 /***/ "./js/collapsible.js":
 /*!***************************!*\
   !*** ./js/collapsible.js ***!
   \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ collapsible)\n/* harmony export */ });\nfunction collapsible() {\r\n    let coll = document.getElementsByClassName('collapsible-button');\r\n    let i;\r\n    \r\n    for (i = 0; i < coll.length; i++) {\r\n        coll[i].addEventListener('click', function() {\r\n        this.classList.toggle('active');\r\n        var content = this.nextElementSibling;\r\n        if (content.style.maxHeight){\r\n            content.style.maxHeight = null;\r\n        } else {\r\n            content.style.maxHeight = content.scrollHeight + \"px\";\r\n        } \r\n        });\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./js/collapsible.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ collapsible; }
+/* harmony export */ });
+function collapsible() {
+  var coll = document.getElementsByClassName('collapsible-button');
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function () {
+      this.classList.toggle('active');
+      var content = this.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+}
 
 /***/ }),
 
@@ -45,10 +36,118 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!*********************!*\
   !*** ./js/index.js ***!
   \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _collapsible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./collapsible.js */ \"./js/collapsible.js\");\n/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/main.scss */ \"./scss/main.scss\");\n\r\n\r\n// import * as $ from 'jquery';\r\n\r\n(0,_collapsible_js__WEBPACK_IMPORTED_MODULE_0__.default)();\r\n\n\n//# sourceURL=webpack:///./js/index.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _collapsible_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./collapsible.js */ "./js/collapsible.js");
+/* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scss/main.scss */ "./scss/main.scss");
+
+ // import * as $ from 'jquery';
+
+(0,_collapsible_js__WEBPACK_IMPORTED_MODULE_0__.default)();
+
+/***/ }),
+
+/***/ "../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss ***!
+  \**********************************************************************************************************************************************************************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+    if(true) {
+      // 1614032464670
+      var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"F:\\Skillfactory\\SF-Drive_homework\\dist\\css","esModule":false,"locals":false});
+      module.hot.dispose(cssReload);
+      module.hot.accept(undefined, cssReload);
+    }
+  
+
+/***/ }),
+
+/***/ "./scss/main.scss":
+/*!************************!*\
+  !*** ./scss/main.scss ***!
+  \************************/
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss");
+/* harmony import */ var _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__);
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default()), options);
+
+
+if (true) {
+  if (!(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals) || module.hot.invalidate) {
+    var isEqualLocals = function isEqualLocals(a, b, isNamedExport) {
+  if (!a && b || a && !b) {
+    return false;
+  }
+
+  var p;
+
+  for (p in a) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (a[p] !== b[p]) {
+      return false;
+    }
+  }
+
+  for (p in b) {
+    if (isNamedExport && p === 'default') {
+      // eslint-disable-next-line no-continue
+      continue;
+    }
+
+    if (!a[p]) {
+      return false;
+    }
+  }
+
+  return true;
+};
+    var oldLocals = (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals);
+
+    module.hot.accept(
+      /*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss",
+      function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../../node_modules/sass-loader/dist/cjs.js!./main.scss */ "../node_modules/mini-css-extract-plugin/dist/loader.js??ruleSet[1].rules[4].use[1]!../node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!../node_modules/sass-loader/dist/cjs.js!./scss/main.scss");
+/* harmony import */ _node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1__);
+(function () {
+        if (!isEqualLocals(oldLocals, (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals), undefined)) {
+                module.hot.invalidate();
+
+                return;
+              }
+
+              oldLocals = (_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals);
+
+              update((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default()));
+      })(__WEBPACK_OUTDATED_DEPENDENCIES__); }.bind(this)
+    )
+  }
+
+  module.hot.dispose(function() {
+    update();
+  });
+}
+
+/* harmony default export */ __webpack_exports__["default"] = ((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals) || {});
 
 /***/ })
 
@@ -91,62 +190,62 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 	
 /******/ 	// the startup function
 /******/ 	// It's empty as some runtime module handles the default behavior
-/******/ 	__webpack_require__.x = x => {};
+/******/ 	__webpack_require__.x = function() {};
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
+/******/ 		__webpack_require__.n = function(module) {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
-/******/ 		__webpack_require__.hu = (chunkId) => {
+/******/ 		__webpack_require__.hu = function(chunkId) {
 /******/ 			// return url for filenames based on template
 /******/ 			return "" + chunkId + "." + __webpack_require__.h() + ".hot-update.js";
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get mini-css chunk filename */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
-/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 		__webpack_require__.miniCssF = function(chunkId) {
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("main." + __webpack_require__.h() + ".hot-update.json");
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.hmrF = function() { return "main." + __webpack_require__.h() + ".hot-update.json"; };
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
-/******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("914d40f2df2793843711")
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.h = function() { return "03d7b24bfe6f8539bcc6"; }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -155,19 +254,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/load script */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var inProgress = {};
 /******/ 		// data-webpack is not used as build has no uniqueName
 /******/ 		// loadScript function to load a script via script tag
-/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
 /******/ 			var script, needAttach;
 /******/ 			if(key !== undefined) {
@@ -190,14 +289,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 				script.src = url;
 /******/ 			}
 /******/ 			inProgress[url] = [done];
-/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 			var onScriptComplete = function(prev, event) {
 /******/ 				// avoid mem leaks in IE.
 /******/ 				script.onerror = script.onload = null;
 /******/ 				clearTimeout(timeout);
 /******/ 				var doneFns = inProgress[url];
 /******/ 				delete inProgress[url];
 /******/ 				script.parentNode && script.parentNode.removeChild(script);
-/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				doneFns && doneFns.forEach(function(fn) { return fn(event); });
 /******/ 				if(prev) return prev(event);
 /******/ 			}
 /******/ 			;
@@ -206,21 +305,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 			script.onload = onScriptComplete.bind(null, script.onload);
 /******/ 			needAttach && document.head.appendChild(script);
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var currentModuleData = {};
 /******/ 		var installedModules = __webpack_require__.c;
 /******/ 		
@@ -580,10 +679,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 				return true;
 /******/ 			}
 /******/ 		}
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
@@ -600,16 +699,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
-/******/ 	(() => {
-/******/ 		var createStylesheet = (chunkId, fullhref, resolve, reject) => {
+/******/ 	!function() {
+/******/ 		var createStylesheet = function(chunkId, fullhref, resolve, reject) {
 /******/ 			var linkTag = document.createElement("link");
 /******/ 		
 /******/ 			linkTag.rel = "stylesheet";
 /******/ 			linkTag.type = "text/css";
-/******/ 			var onLinkComplete = (event) => {
+/******/ 			var onLinkComplete = function(event) {
 /******/ 				// avoid mem leaks.
 /******/ 				linkTag.onerror = linkTag.onload = null;
 /******/ 				if (event.type === 'load') {
@@ -631,7 +730,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 			document.head.appendChild(linkTag);
 /******/ 			return linkTag;
 /******/ 		};
-/******/ 		var findStylesheet = (href, fullhref) => {
+/******/ 		var findStylesheet = function(href, fullhref) {
 /******/ 			var existingLinkTags = document.getElementsByTagName("link");
 /******/ 			for(var i = 0; i < existingLinkTags.length; i++) {
 /******/ 				var tag = existingLinkTags[i];
@@ -645,8 +744,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 				if(dataHref === href || dataHref === fullhref) return tag;
 /******/ 			}
 /******/ 		};
-/******/ 		var loadStylesheet = (chunkId) => {
-/******/ 			return new Promise((resolve, reject) => {
+/******/ 		var loadStylesheet = function(chunkId) {
+/******/ 			return new Promise(function(resolve, reject) {
 /******/ 				var href = __webpack_require__.miniCssF(chunkId);
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				if(findStylesheet(href, fullhref)) return resolve();
@@ -657,27 +756,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 		
 /******/ 		var oldTags = [];
 /******/ 		var newTags = [];
-/******/ 		var applyHandler = (options) => {
-/******/ 			return { dispose: () => {
+/******/ 		var applyHandler = function(options) {
+/******/ 			return { dispose: function() {
 /******/ 				for(var i = 0; i < oldTags.length; i++) {
 /******/ 					var oldTag = oldTags[i];
 /******/ 					if(oldTag.parentNode) oldTag.parentNode.removeChild(oldTag);
 /******/ 				}
 /******/ 				oldTags.length = 0;
-/******/ 			}, apply: () => {
+/******/ 			}, apply: function() {
 /******/ 				for(var i = 0; i < newTags.length; i++) newTags[i].rel = "stylesheet";
 /******/ 				newTags.length = 0;
 /******/ 			} };
 /******/ 		}
-/******/ 		__webpack_require__.hmrC.miniCss = (chunkIds, removedChunks, removedModules, promises, applyHandlers, updatedModulesList) => {
+/******/ 		__webpack_require__.hmrC.miniCss = function(chunkIds, removedChunks, removedModules, promises, applyHandlers, updatedModulesList) {
 /******/ 			applyHandlers.push(applyHandler);
-/******/ 			chunkIds.forEach((chunkId) => {
+/******/ 			chunkIds.forEach(function(chunkId) {
 /******/ 				var href = __webpack_require__.miniCssF(chunkId);
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				const oldTag = findStylesheet(href, fullhref);
 /******/ 				if(!oldTag) return;
-/******/ 				promises.push(new Promise((resolve, reject) => {
-/******/ 					var tag = createStylesheet(chunkId, fullhref, () => {
+/******/ 				promises.push(new Promise(function(resolve, reject) {
+/******/ 					var tag = createStylesheet(chunkId, fullhref, function() {
 /******/ 						tag.as = "style";
 /******/ 						tag.rel = "preload";
 /******/ 						resolve();
@@ -687,10 +786,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 				}));
 /******/ 			});
 /******/ 		}
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -701,7 +800,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 		};
 /******/ 		
 /******/ 		var deferredModules = [
-/******/ 			["./js/index.js","vendors-node_modules_mini-css-extract-plugin_dist_hmr_hotModuleReplacement_js-node_modules_st-04e20d"]
+/******/ 			["../node_modules/@babel/polyfill/lib/index.js","vendors-node_modules_babel_polyfill_lib_index_js-node_modules_mini-css-extract-plugin_dist_hm-5b69db"],
+/******/ 			["./js/index.js","vendors-node_modules_babel_polyfill_lib_index_js-node_modules_mini-css-extract-plugin_dist_hm-5b69db"]
 /******/ 		];
 /******/ 		// no chunk on demand loading
 /******/ 		
@@ -712,13 +812,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 		var currentUpdatedModulesList;
 /******/ 		var waitingUpdateResolves = {};
 /******/ 		function loadUpdateChunk(chunkId) {
-/******/ 			return new Promise((resolve, reject) => {
+/******/ 			return new Promise(function(resolve, reject) {
 /******/ 				waitingUpdateResolves[chunkId] = resolve;
 /******/ 				// start update chunk loading
 /******/ 				var url = __webpack_require__.p + __webpack_require__.hu(chunkId);
 /******/ 				// create error before stack unwound to get useful stacktrace later
 /******/ 				var error = new Error();
-/******/ 				var loadingEnded = (event) => {
+/******/ 				var loadingEnded = function(event) {
 /******/ 					if(waitingUpdateResolves[chunkId]) {
 /******/ 						waitingUpdateResolves[chunkId] = undefined
 /******/ 						var errorType = event && (event.type === 'load' ? 'missing' : event.type);
@@ -734,7 +834,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 			});
 /******/ 		}
 /******/ 		
-/******/ 		self["webpackHotUpdate"] = (chunkId, moreModules, runtime) => {
+/******/ 		self["webpackHotUpdate"] = function(chunkId, moreModules, runtime) {
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 					currentUpdate[moduleId] = moreModules[moduleId];
@@ -1160,20 +1260,23 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 			}
 /******/ 		};
 /******/ 		
-/******/ 		__webpack_require__.hmrM = () => {
+/******/ 		__webpack_require__.hmrM = function() {
 /******/ 			if (typeof fetch === "undefined") throw new Error("No browser support: need fetch API");
-/******/ 			return fetch(__webpack_require__.p + __webpack_require__.hmrF()).then((response) => {
+/******/ 			return fetch(__webpack_require__.p + __webpack_require__.hmrF()).then(function(response) {
 /******/ 				if(response.status === 404) return; // no update available
 /******/ 				if(!response.ok) throw new Error("Failed to fetch update manifest " + response.statusText);
 /******/ 				return response.json();
 /******/ 			});
 /******/ 		};
 /******/ 		
-/******/ 		var checkDeferredModules = x => {};
+/******/ 		var checkDeferredModules = function() {};
 /******/ 		
 /******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime, executeModules] = data;
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
+/******/ 			var executeModules = data[3];
 /******/ 			// add "moreModules" to the modules object,
 /******/ 			// then flag all "chunkIds" as loaded and fire callback
 /******/ 			var moduleId, chunkId, i = 0, resolves = [];
@@ -1222,17 +1325,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 			}
 /******/ 			if(deferredModules.length === 0) {
 /******/ 				__webpack_require__.x();
-/******/ 				__webpack_require__.x = x => {};
+/******/ 				__webpack_require__.x = function() {};
 /******/ 			}
 /******/ 			return result;
 /******/ 		}
 /******/ 		var startup = __webpack_require__.x;
-/******/ 		__webpack_require__.x = () => {
+/******/ 		__webpack_require__.x = function() {
 /******/ 			// reset startup function so it can be called again when more startup code is added
-/******/ 			__webpack_require__.x = startup || (x => {});
+/******/ 			__webpack_require__.x = startup || (function() {});
 /******/ 			return (checkDeferredModules = checkDeferredModulesImpl)();
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
@@ -1242,3 +1345,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _col
 /******/ 	
 /******/ })()
 ;
+//# sourceMappingURL=main.js.map

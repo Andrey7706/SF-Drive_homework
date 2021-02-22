@@ -1,12 +1,4 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (() => { // webpackBootstrap
+/******/ (function() { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -14,9 +6,29 @@
 /*!***************************!*\
   !*** ./js/collapsible.js ***!
   \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ collapsible)\n/* harmony export */ });\nfunction collapsible() {\r\n    let coll = document.getElementsByClassName('collapsible-button');\r\n    let i;\r\n    \r\n    for (i = 0; i < coll.length; i++) {\r\n        coll[i].addEventListener('click', function() {\r\n        this.classList.toggle('active');\r\n        var content = this.nextElementSibling;\r\n        if (content.style.maxHeight){\r\n            content.style.maxHeight = null;\r\n        } else {\r\n            content.style.maxHeight = content.scrollHeight + \"px\";\r\n        } \r\n        });\r\n    }\r\n}\r\n\n\n//# sourceURL=webpack:///./js/collapsible.js?");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ collapsible; }
+/* harmony export */ });
+function collapsible() {
+  var coll = document.getElementsByClassName('collapsible-button');
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', function () {
+      this.classList.toggle('active');
+      var content = this.nextElementSibling;
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+}
 
 /***/ })
 
@@ -59,47 +71,47 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = (exports, definition) => {
+/******/ 		__webpack_require__.d = function(exports, definition) {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
-/******/ 		__webpack_require__.hu = (chunkId) => {
+/******/ 		__webpack_require__.hu = function(chunkId) {
 /******/ 			// return url for filenames based on template
 /******/ 			return "" + chunkId + "." + __webpack_require__.h() + ".hot-update.js";
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get mini-css chunk filename */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
-/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 		__webpack_require__.miniCssF = function(chunkId) {
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmrF = () => ("collapsible." + __webpack_require__.h() + ".hot-update.json");
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.hmrF = function() { return "collapsible." + __webpack_require__.h() + ".hot-update.json"; };
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
-/******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("914d40f2df2793843711")
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.h = function() { return "03d7b24bfe6f8539bcc6"; }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -108,19 +120,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	(() => {
-/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/load script */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var inProgress = {};
 /******/ 		// data-webpack is not used as build has no uniqueName
 /******/ 		// loadScript function to load a script via script tag
-/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 		__webpack_require__.l = function(url, done, key, chunkId) {
 /******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
 /******/ 			var script, needAttach;
 /******/ 			if(key !== undefined) {
@@ -143,14 +155,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 				script.src = url;
 /******/ 			}
 /******/ 			inProgress[url] = [done];
-/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 			var onScriptComplete = function(prev, event) {
 /******/ 				// avoid mem leaks in IE.
 /******/ 				script.onerror = script.onload = null;
 /******/ 				clearTimeout(timeout);
 /******/ 				var doneFns = inProgress[url];
 /******/ 				delete inProgress[url];
 /******/ 				script.parentNode && script.parentNode.removeChild(script);
-/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				doneFns && doneFns.forEach(function(fn) { return fn(event); });
 /******/ 				if(prev) return prev(event);
 /******/ 			}
 /******/ 			;
@@ -159,21 +171,21 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			script.onload = onScriptComplete.bind(null, script.onload);
 /******/ 			needAttach && document.head.appendChild(script);
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
+/******/ 		__webpack_require__.r = function(exports) {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/hot module replacement */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var currentModuleData = {};
 /******/ 		var installedModules = __webpack_require__.c;
 /******/ 		
@@ -533,10 +545,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 				return true;
 /******/ 			}
 /******/ 		}
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		var scriptUrl;
 /******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
 /******/ 		var document = __webpack_require__.g.document;
@@ -553,16 +565,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
 /******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
 /******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/css loading */
-/******/ 	(() => {
-/******/ 		var createStylesheet = (chunkId, fullhref, resolve, reject) => {
+/******/ 	!function() {
+/******/ 		var createStylesheet = function(chunkId, fullhref, resolve, reject) {
 /******/ 			var linkTag = document.createElement("link");
 /******/ 		
 /******/ 			linkTag.rel = "stylesheet";
 /******/ 			linkTag.type = "text/css";
-/******/ 			var onLinkComplete = (event) => {
+/******/ 			var onLinkComplete = function(event) {
 /******/ 				// avoid mem leaks.
 /******/ 				linkTag.onerror = linkTag.onload = null;
 /******/ 				if (event.type === 'load') {
@@ -584,7 +596,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			document.head.appendChild(linkTag);
 /******/ 			return linkTag;
 /******/ 		};
-/******/ 		var findStylesheet = (href, fullhref) => {
+/******/ 		var findStylesheet = function(href, fullhref) {
 /******/ 			var existingLinkTags = document.getElementsByTagName("link");
 /******/ 			for(var i = 0; i < existingLinkTags.length; i++) {
 /******/ 				var tag = existingLinkTags[i];
@@ -598,8 +610,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 				if(dataHref === href || dataHref === fullhref) return tag;
 /******/ 			}
 /******/ 		};
-/******/ 		var loadStylesheet = (chunkId) => {
-/******/ 			return new Promise((resolve, reject) => {
+/******/ 		var loadStylesheet = function(chunkId) {
+/******/ 			return new Promise(function(resolve, reject) {
 /******/ 				var href = __webpack_require__.miniCssF(chunkId);
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				if(findStylesheet(href, fullhref)) return resolve();
@@ -610,27 +622,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		
 /******/ 		var oldTags = [];
 /******/ 		var newTags = [];
-/******/ 		var applyHandler = (options) => {
-/******/ 			return { dispose: () => {
+/******/ 		var applyHandler = function(options) {
+/******/ 			return { dispose: function() {
 /******/ 				for(var i = 0; i < oldTags.length; i++) {
 /******/ 					var oldTag = oldTags[i];
 /******/ 					if(oldTag.parentNode) oldTag.parentNode.removeChild(oldTag);
 /******/ 				}
 /******/ 				oldTags.length = 0;
-/******/ 			}, apply: () => {
+/******/ 			}, apply: function() {
 /******/ 				for(var i = 0; i < newTags.length; i++) newTags[i].rel = "stylesheet";
 /******/ 				newTags.length = 0;
 /******/ 			} };
 /******/ 		}
-/******/ 		__webpack_require__.hmrC.miniCss = (chunkIds, removedChunks, removedModules, promises, applyHandlers, updatedModulesList) => {
+/******/ 		__webpack_require__.hmrC.miniCss = function(chunkIds, removedChunks, removedModules, promises, applyHandlers, updatedModulesList) {
 /******/ 			applyHandlers.push(applyHandler);
-/******/ 			chunkIds.forEach((chunkId) => {
+/******/ 			chunkIds.forEach(function(chunkId) {
 /******/ 				var href = __webpack_require__.miniCssF(chunkId);
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				const oldTag = findStylesheet(href, fullhref);
 /******/ 				if(!oldTag) return;
-/******/ 				promises.push(new Promise((resolve, reject) => {
-/******/ 					var tag = createStylesheet(chunkId, fullhref, () => {
+/******/ 				promises.push(new Promise(function(resolve, reject) {
+/******/ 					var tag = createStylesheet(chunkId, fullhref, function() {
 /******/ 						tag.as = "style";
 /******/ 						tag.rel = "preload";
 /******/ 						resolve();
@@ -640,10 +652,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 				}));
 /******/ 			});
 /******/ 		}
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
+/******/ 	!function() {
 /******/ 		// no baseURI
 /******/ 		
 /******/ 		// object to store loaded and loading chunks
@@ -663,13 +675,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		var currentUpdatedModulesList;
 /******/ 		var waitingUpdateResolves = {};
 /******/ 		function loadUpdateChunk(chunkId) {
-/******/ 			return new Promise((resolve, reject) => {
+/******/ 			return new Promise(function(resolve, reject) {
 /******/ 				waitingUpdateResolves[chunkId] = resolve;
 /******/ 				// start update chunk loading
 /******/ 				var url = __webpack_require__.p + __webpack_require__.hu(chunkId);
 /******/ 				// create error before stack unwound to get useful stacktrace later
 /******/ 				var error = new Error();
-/******/ 				var loadingEnded = (event) => {
+/******/ 				var loadingEnded = function(event) {
 /******/ 					if(waitingUpdateResolves[chunkId]) {
 /******/ 						waitingUpdateResolves[chunkId] = undefined
 /******/ 						var errorType = event && (event.type === 'load' ? 'missing' : event.type);
@@ -685,7 +697,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			});
 /******/ 		}
 /******/ 		
-/******/ 		self["webpackHotUpdate"] = (chunkId, moreModules, runtime) => {
+/******/ 		self["webpackHotUpdate"] = function(chunkId, moreModules, runtime) {
 /******/ 			for(var moduleId in moreModules) {
 /******/ 				if(__webpack_require__.o(moreModules, moduleId)) {
 /******/ 					currentUpdate[moduleId] = moreModules[moduleId];
@@ -1111,9 +1123,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 		};
 /******/ 		
-/******/ 		__webpack_require__.hmrM = () => {
+/******/ 		__webpack_require__.hmrM = function() {
 /******/ 			if (typeof fetch === "undefined") throw new Error("No browser support: need fetch API");
-/******/ 			return fetch(__webpack_require__.p + __webpack_require__.hmrF()).then((response) => {
+/******/ 			return fetch(__webpack_require__.p + __webpack_require__.hmrF()).then(function(response) {
 /******/ 				if(response.status === 404) return; // no update available
 /******/ 				if(!response.ok) throw new Error("Failed to fetch update manifest " + response.statusText);
 /******/ 				return response.json();
@@ -1125,7 +1137,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		// no jsonp function
 /******/ 		
 /******/ 		// no deferred startup
-/******/ 	})();
+/******/ 	}();
 /******/ 	
 /************************************************************************/
 /******/ 	
@@ -1136,3 +1148,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	
 /******/ })()
 ;
+//# sourceMappingURL=collapsible.js.map

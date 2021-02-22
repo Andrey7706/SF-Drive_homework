@@ -351,19 +351,19 @@ template {
 /* fonts */
 @font-face {
   font-family: "Roboto";
-  src: url(F:\Skillfactory\SF-Drive_homework\dist/03523cf578d69fa923226ff457b92d90.ttf) format("truetype");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(F:\Skillfactory\SF-Drive_homework\dist/4f39c5796e60c9d8e7327a00e9a4442e.ttf) format("truetype");
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Roboto";
-  src: url(F:\Skillfactory\SF-Drive_homework\dist/13a29228654d5c5ec9c482a267efa4af.ttf) format("truetype");
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -672,10 +672,10 @@ ul, ol {
   color: #61A199;
 }
 .collapsible-button.active::after {
-  content: url(F:\Skillfactory\SF-Drive_homework\dist/ac3cdd935d77339dfc025d5f304eae86.png);
+  content: url(../img/chevron-up.png);
 }
 .collapsible-button::after {
-  content: url(F:\Skillfactory\SF-Drive_homework\dist/98da3fb7c4f3f22f18fc2f862de8b47c.png);
+  content: url(../img/chevron-down.png);
   position: absolute;
   right: 20px;
   top: calc(50% - 16px);
@@ -826,14 +826,14 @@ ul, ol {
     padding: 5px 20px 20px;
   }
   .collapsible-button::after {
-    content: url(F:\Skillfactory\SF-Drive_homework\dist/1046d61cd78f504b457f7ccb301cae95.png);
+    content: url(../img/chevron-down-min.png);
     right: 10px;
     top: calc(50% - 13px);
     width: 26px;
     height: 26px;
   }
   .collapsible-button.active::after {
-    content: url(F:\Skillfactory\SF-Drive_homework\dist/a1f78d01dde573216e2d8ea3fc1f2ef8.png);
+    content: url(../img/chevron-up-min.png);
   }
 }
 .footer {
@@ -886,3 +886,5 @@ ul, ol {
     margin-bottom: 10px;
   }
 }
+
+/*# sourceMappingURL=style.css.map*/
