@@ -54,7 +54,7 @@ const optimization = () => {
 
 const plugins = () => {
     const base = [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
             template: path.resolve(__dirname, './src/about.html'),
             filename: 'about.html',
@@ -103,7 +103,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         open: true,
-        compress: true,
         hot: isDev,
         port: 8080
     },
