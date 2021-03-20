@@ -56,6 +56,13 @@ const plugins = () => {
     const base = [
         // new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
+            template: path.resolve(__dirname, './src/index.html'),
+            filename: 'index.html',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new HTMLWebpackPlugin({
             template: path.resolve(__dirname, './src/about.html'),
             filename: 'about.html',
             minify: {
