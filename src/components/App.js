@@ -15,9 +15,9 @@ function App() {
             <Header />
             <Router>
                 <Switch>
-                    <Route exact path="/" component={ Main } />
-                    <Route exact path="/about" component={ About } />
-                    <Route exact path="/faq" component={ Collapsible } />
+                    <Route exact path="/" component={Main} />
+                    <Route path="/about" component={About} />
+                    <Route path="/faq" component={Collapsible} />
                 </Switch>
             </Router>
             <Footer />     

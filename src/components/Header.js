@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -10,9 +11,9 @@ function Header() {
                     </div>
                     <nav className="menu">
                         <ul className="menu-main">
-                            <li className="menu-main__item"><a href="about.html" className="menu-main__link">О нас</a></li>
-                            <li className="menu-main__item"><a href="#" className="menu-main__link">Условия</a></li>
-                            <li className="menu-main__item"><a href="faq.html" className="menu-main__link">Частые вопросы</a></li>
+                            <li className="menu-main__item"><Link to="about.html" className="menu-main__link">О нас</Link></li>
+                            <li className="menu-main__item"><Link to="#" className="menu-main__link">Условия</Link></li>
+                            <li className="menu-main__item"><Link to="faq.html" className="menu-main__link">Частые вопросы</Link></li>
                         </ul>
                         <button className="btn">Войти</button>
                     </nav>

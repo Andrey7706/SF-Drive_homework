@@ -1,3 +1,5 @@
+import { BrowserRouter } from 'react-router-dom';
+
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "../components/App";
@@ -6,9 +8,9 @@ import collapsible from './collapsible.js';
 
 
 ReactDOM.render(
-    <React.StrictMode>
+    <BrowserRouter>
         <App />
-    </React.StrictMode>, 
+    </BrowserRouter>, 
     document.getElementById('root')
     );
 
