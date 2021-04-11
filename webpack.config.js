@@ -54,17 +54,10 @@ const optimization = () => {
 
 const plugins = () => {
     const base = [
-        new CleanWebpackPlugin(),
+        // new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, './src/about.html'),
-            filename: 'about.html',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
-        new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, './src/faq.html'),
-            filename: 'faq.html',
+            template: path.resolve(__dirname, './src/index.html'),
+            filename: 'index.html',
             minify: {
                 collapseWhitespace: isProd
             }
@@ -93,8 +86,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './js/index.js'],
-        collapsible: './js/collapsible.js'
+        main: ['@babel/polyfill', './index.js'],
+        script: './js/script.js'
     },
     output: {
         filename: filename('js'),
@@ -103,7 +96,6 @@ module.exports = {
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         open: true,
-        compress: true,
         hot: isDev,
         port: 8080
     },

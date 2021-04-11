@@ -2,10 +2,10 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./js/collapsible.js":
-/*!***************************!*\
-  !*** ./js/collapsible.js ***!
-  \***************************/
+/***/ "./js/script.js":
+/*!**********************!*\
+  !*** ./js/script.js ***!
+  \**********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
@@ -13,13 +13,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": function() { return /* binding */ collapsible; }
 /* harmony export */ });
 function collapsible() {
-  var coll = document.getElementsByClassName('collapsible-button');
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener('click', function () {
-      this.classList.toggle('active');
-      var content = this.nextElementSibling;
+  var coll = document.querySelectorAll('.collapsible-button');
+  coll.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btn[i].classList.toggle('active');
+      var content = btn[i].nextElementSibling;
 
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
@@ -27,7 +25,7 @@ function collapsible() {
         content.style.maxHeight = content.scrollHeight + "px";
       }
     });
-  }
+  });
 }
 
 /***/ })
@@ -102,12 +100,12 @@ function collapsible() {
 /******/ 	
 /******/ 	/* webpack/runtime/get update manifest filename */
 /******/ 	!function() {
-/******/ 		__webpack_require__.hmrF = function() { return "collapsible." + __webpack_require__.h() + ".hot-update.json"; };
+/******/ 		__webpack_require__.hmrF = function() { return "script." + __webpack_require__.h() + ".hot-update.json"; };
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "03d7b24bfe6f8539bcc6"; }
+/******/ 		__webpack_require__.h = function() { return "6adba61a093503fc9236"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -662,7 +660,7 @@ function collapsible() {
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// Promise = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"collapsible": 0
+/******/ 			"script": 0
 /******/ 		};
 /******/ 		
 /******/ 		
@@ -1144,8 +1142,8 @@ function collapsible() {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	var __webpack_exports__ = __webpack_require__("./js/collapsible.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./js/script.js");
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=collapsible.js.map
+//# sourceMappingURL=script.js.map
