@@ -11,9 +11,9 @@ function Header() {
                     </div>
                     <nav className="menu">
                         <ul className="menu-main">
-                            <li className="menu-main__item"><Link to="about.html" className="menu-main__link">О нас</Link></li>
+                            <li className="menu-main__item"><Link to="about" className="menu-main__link">О нас</Link></li>
                             <li className="menu-main__item"><Link to="#" className="menu-main__link">Условия</Link></li>
-                            <li className="menu-main__item"><Link to="faq.html" className="menu-main__link">Частые вопросы</Link></li>
+                            <li className="menu-main__item"><Link to="faq" className="menu-main__link">Частые вопросы</Link></li>
                         </ul>
                         <button className="btn">Войти</button>
                     </nav>
