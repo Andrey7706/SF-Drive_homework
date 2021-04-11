@@ -1,7 +1,11 @@
 import React from "react";
+import Header from './Header';
+import Footer from './Footer';
 
 function About() {
     return (
+        <>
+        <Header />
         <main>
             <section className="intro">
                 <div className="wrap">
@@ -120,6 +124,8 @@ function About() {
                 </div>
             </section>
         </main>
+        <Footer />
+        </>
     );
 }
 

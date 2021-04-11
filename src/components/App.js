@@ -1,27 +1,21 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Header from './Header';
 import Main from './Main';
 import About from './About';
 import Collapsible from './Collapsible';
-import Footer from './Footer';
 
 
 
 function App() {
     return (
-        <Fragment>
-            <Header />
-            <Router>
-                <Switch>
-                    <Route exact path="/" component={Main} />
-                    <Route path="/about" component={About} />
-                    <Route path="/faq" component={Collapsible} />
-                </Switch>
-            </Router>
-            <Footer />     
-        </Fragment>     
+        <Router>
+            <Switch>
+                <Route exact path="/" component={Main} />
+                <Route exact path="/about.html" component={About} />
+                <Route exact path="/faq.html" component={Collapsible} />
+            </Switch>
+        </Router> 
     );
 }
 

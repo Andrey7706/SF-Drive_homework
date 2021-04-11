@@ -62,20 +62,6 @@ const plugins = () => {
                 collapseWhitespace: isProd
             }
         }),
-        new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, './src/about.html'),
-            filename: 'about.html',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
-        new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, './src/faq.html'),
-            filename: 'faq.html',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
         new CopyWebpackPlugin({
             patterns: [
                 {from: path.resolve(__dirname, 'src/favicon.ico'), to: path.resolve(__dirname, 'dist')},
@@ -100,8 +86,8 @@ module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
     entry: {
-        main: ['@babel/polyfill', './js/index.js'],
-        collapsible: './js/collapsible.js'
+        main: ['@babel/polyfill', './index.js'],
+        script: './js/script.js'
     },
     output: {
         filename: filename('js'),

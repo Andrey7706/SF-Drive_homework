@@ -1,7 +1,11 @@
 import React from "react";
+import Header from './Header';
+import Footer from './Footer';
 
 function Collapsible() {
     return (
+        <>
+        <Header />
         <main>
             <section className="question">
                 <div className="wrap">
@@ -72,6 +76,8 @@ function Collapsible() {
                 </div>
             </section>
         </main>
+        <Footer />
+        </>
     )
 }
 
