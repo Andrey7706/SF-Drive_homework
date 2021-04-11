@@ -9,12 +9,15 @@
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 __webpack_require__.r(__webpack_exports__);
-function Collapsible() {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ collapsible; }
+/* harmony export */ });
+function collapsible() {
   var coll = document.querySelectorAll('.collapsible-button');
   coll.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      coll[i].classList.toggle('active');
-      var content = coll[i].nextElementSibling;
+      btn[i].classList.toggle('active');
+      var content = btn[i].nextElementSibling;
 
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
@@ -24,8 +27,6 @@ function Collapsible() {
     });
   });
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (Collapsible());
 
 /***/ })
 
@@ -67,6 +68,18 @@ function Collapsible() {
 /******/ 	__webpack_require__.i = [];
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/get javascript update chunk filename */
 /******/ 	!function() {
 /******/ 		// This function allow to reference all chunks
@@ -92,7 +105,7 @@ function Collapsible() {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "eac9d735ad1390361022"; }
+/******/ 		__webpack_require__.h = function() { return "3dab4bc4003a058457b4"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

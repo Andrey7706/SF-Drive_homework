@@ -164,11 +164,9 @@ function App() {
     path: "/",
     component: _Main__WEBPACK_IMPORTED_MODULE_1__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    exact: true,
     path: "/about.html",
     component: _About__WEBPACK_IMPORTED_MODULE_2__.default
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.Route, {
-    exact: true,
     path: "/faq.html",
     component: _Collapsible__WEBPACK_IMPORTED_MODULE_3__.default
   })));
@@ -395,33 +393,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./components/App.js");
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/main.scss */ "./scss/main.scss");
-/* harmony import */ var _js_Script__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/Script */ "./js/Script.js");
+/* harmony import */ var _js_script_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/script.js */ "./js/script.js");
 
 
 
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById('root')); // import * as $ from 'jquery';
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.HashRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById('root')); // import * as $ from 'jquery';
 
-(0,_js_Script__WEBPACK_IMPORTED_MODULE_4__.default)();
+(0,_js_script_js__WEBPACK_IMPORTED_MODULE_4__.default)();
 
 /***/ }),
 
-/***/ "./js/Script.js":
+/***/ "./js/script.js":
 /*!**********************!*\
-  !*** ./js/Script.js ***!
+  !*** ./js/script.js ***!
   \**********************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function Collapsible() {
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ collapsible; }
+/* harmony export */ });
+function collapsible() {
   var coll = document.querySelectorAll('.collapsible-button');
   coll.forEach(function (btn) {
     btn.addEventListener('click', function () {
-      coll[i].classList.toggle('active');
-      var content = coll[i].nextElementSibling;
+      btn[i].classList.toggle('active');
+      var content = btn[i].nextElementSibling;
 
       if (content.style.maxHeight) {
         content.style.maxHeight = null;
@@ -431,8 +432,6 @@ function Collapsible() {
     });
   });
 }
-
-/* harmony default export */ __webpack_exports__["default"] = (Collapsible());
 
 /***/ }),
 
@@ -444,7 +443,7 @@ function Collapsible() {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1618156524512
+      // 1618165166464
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"F:\\Skillfactory\\SF-Drive_homework\\dist\\css","esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -628,7 +627,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "eac9d735ad1390361022"; }
+/******/ 		__webpack_require__.h = function() { return "3dab4bc4003a058457b4"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
