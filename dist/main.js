@@ -138,6 +138,58 @@ function About() {
 
 /***/ }),
 
+/***/ "./components/Accordion.js":
+/*!*********************************!*\
+  !*** ./components/Accordion.js ***!
+  \*********************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var _data_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../data.json */ "./data.json");
+//import * as React from "react";
+
+
+
+function Accordion() {
+  var eventHandler = function eventHandler(e, index) {
+    e.preventDefault();
+    var content = e.target.nextElementSibling;
+    e.target.classList.toggle("active");
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
+    className: "collapsible"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "wrap"
+  }, _data_json__WEBPACK_IMPORTED_MODULE_1__.map(function (tab, index) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "collapsible-set",
+      key: index
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+      onClick: function onClick(e) {
+        return eventHandler(e, index);
+      },
+      className: "collapsible-button"
+    }, tab.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "collapsible-content"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "collapsible-inner"
+    }, " ", tab.description, " ")));
+  })));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Accordion);
+
+/***/ }),
+
 /***/ "./components/App.js":
 /*!***************************!*\
   !*** ./components/App.js ***!
@@ -187,6 +239,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
+/* harmony import */ var _Accordion__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Accordion */ "./components/Accordion.js");
+
 
 
 
@@ -206,49 +260,7 @@ function Collapsible() {
     className: "h1"
   }, "\u0427\u0430\u0441\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "content-text"
-  }, "\u041E\u0442\u0432\u0435\u0447\u0430\u0435\u043C \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443 \u0432\u0430\u0441 \u043C\u043E\u0433\u0443\u0442 \u0432\u043E\u0437\u043D\u0438\u043A\u043D\u0443\u0442\u044C.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("section", {
-    className: "collapsible"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "wrap"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-set"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u041C\u043E\u0433\u0443 \u043B\u0438 \u044F \u043E\u0442\u043C\u0435\u043D\u0438\u0442\u044C \u0431\u0440\u043E\u043D\u044C?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u041C\u043E\u0433\u0443 \u043B\u0438 \u044F \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0434\u0435\u043D\u044C\u0433\u0438, \u0435\u0441\u043B\u0438 \u043D\u0435 \u043F\u043E\u0434\u043E\u0448\u0451\u043B \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C, \u0435\u0441\u043B\u0438 \u0441\u043B\u0443\u0447\u0438\u043B\u043E\u0441\u044C \u0414\u0422\u041F?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u041C\u043E\u0433\u0443 \u043B\u0438 \u044F \u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C \u0432 \u0443\u0434\u043E\u0431\u043D\u043E\u043C \u0434\u043B\u044F \u043C\u0435\u043D\u044F \u043C\u0435\u0441\u0442\u0435?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "\u0414\u0430\u043D\u043D\u044B\u0439 \u0432\u043E\u043F\u0440\u043E\u0441 \u043E\u0431\u0441\u0443\u0436\u0434\u0430\u0435\u0442\u0441\u044F \u0441 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A\u043E\u043C, \u043D\u043E \u043A\u0430\u043A \u043F\u0440\u0430\u0432\u0438\u043B\u043E \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C \u043D\u0443\u0436\u043D\u043E \u0432\u0435\u0440\u043D\u0443\u0442\u044C \u0442\u0443\u0434\u0430, \u0433\u0434\u0435 \u0432\u044B \u0435\u0433\u043E \u043F\u043E\u043B\u0443\u0447\u0438\u043B\u0438.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u0427\u0442\u043E \u0434\u0435\u043B\u0430\u0442\u044C, \u0435\u0441\u043B\u0438 \u0441\u043E\u0431\u0441\u0442\u0432\u0435\u043D\u043D\u0438\u043A \u043F\u0440\u043E\u0441\u0438\u0442 \u0437\u0430\u043F\u043B\u0430\u0442\u0438\u0442\u044C \u0435\u043C\u0443 \u043D\u0430\u043F\u0440\u044F\u043C\u0443\u044E?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
-    className: "collapsible-button"
-  }, "\u0414\u043E\u043B\u0436\u0435\u043D \u043B\u0438 \u044F \u0437\u0430\u043F\u0440\u0430\u0432\u043B\u044F\u0442\u044C \u0430\u0432\u0442\u043E\u043C\u043E\u0431\u0438\u043B\u044C?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-content"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "collapsible-inner"
-  }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__.default, null));
+  }, "\u041E\u0442\u0432\u0435\u0447\u0430\u0435\u043C \u043D\u0430 \u0432\u043E\u043F\u0440\u043E\u0441\u044B, \u043A\u043E\u0442\u043E\u0440\u044B\u0435 \u0443 \u0432\u0430\u0441 \u043C\u043E\u0433\u0443\u0442 \u0432\u043E\u0437\u043D\u0438\u043A\u043D\u0443\u0442\u044C.")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Accordion__WEBPACK_IMPORTED_MODULE_3__.default, null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer__WEBPACK_IMPORTED_MODULE_2__.default, null));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Collapsible);
@@ -309,7 +321,7 @@ function Footer() {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
 
 
 
@@ -329,24 +341,7 @@ function Header() {
     alt: "\u041B\u043E\u0433\u043E\u0442\u0438\u043F"
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("nav", {
     className: "menu"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
-    className: "menu-main"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    className: "menu-main__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "about",
-    className: "menu-main__link"
-  }, "\u041E \u043D\u0430\u0441")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    className: "menu-main__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "#",
-    className: "menu-main__link"
-  }, "\u0423\u0441\u043B\u043E\u0432\u0438\u044F")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
-    className: "menu-main__item"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
-    to: "faq",
-    className: "menu-main__link"
-  }, "\u0427\u0430\u0441\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__.default, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("button", {
     className: "btn"
   }, "\u0412\u043E\u0439\u0442\u0438")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "menu-toggle"
@@ -380,6 +375,44 @@ function Main() {
 
 /***/ }),
 
+/***/ "./components/Nav.js":
+/*!***************************!*\
+  !*** ./components/Nav.js ***!
+  \***************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
+
+
+
+function Nav() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", {
+    className: "menu-main"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    className: "menu-main__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "about",
+    className: "menu-main__link"
+  }, "\u041E \u043D\u0430\u0441")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    className: "menu-main__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "#",
+    className: "menu-main__link"
+  }, "\u0423\u0441\u043B\u043E\u0432\u0438\u044F")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", {
+    className: "menu-main__item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__.Link, {
+    to: "faq",
+    className: "menu-main__link"
+  }, "\u0427\u0430\u0441\u0442\u044B\u0435 \u0432\u043E\u043F\u0440\u043E\u0441\u044B")));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (Nav);
+
+/***/ }),
+
 /***/ "./index.js":
 /*!******************!*\
   !*** ./index.js ***!
@@ -390,48 +423,15 @@ function Main() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "../node_modules/react-dom/index.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "../node_modules/react-router-dom/esm/react-router-dom.js");
 /* harmony import */ var _components_App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/App */ "./components/App.js");
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./scss/main.scss */ "./scss/main.scss");
-/* harmony import */ var _js_script_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/script.js */ "./js/script.js");
 
 
 
 
 
-
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById('root')); // import * as $ from 'jquery';
-
-(0,_js_script_js__WEBPACK_IMPORTED_MODULE_4__.default)();
-
-/***/ }),
-
-/***/ "./js/script.js":
-/*!**********************!*\
-  !*** ./js/script.js ***!
-  \**********************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ collapsible; }
-/* harmony export */ });
-function collapsible() {
-  var coll = document.querySelectorAll('.collapsible-button');
-  coll.forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      btn[i].classList.toggle('active');
-      var content = btn[i].nextElementSibling;
-
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  });
-}
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__.BrowserRouter, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_components_App__WEBPACK_IMPORTED_MODULE_2__.default, null)), document.getElementById('root')); // import * as $ from 'jquery';
 
 /***/ }),
 
@@ -443,7 +443,7 @@ function collapsible() {
 
 // extracted by mini-css-extract-plugin
     if(true) {
-      // 1618165166464
+      // 1618260189365
       var cssReload = __webpack_require__(/*! ../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js */ "../node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js")(module.id, {"publicPath":"F:\\Skillfactory\\SF-Drive_homework\\dist\\css","esModule":false,"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -534,6 +534,17 @@ if (true) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = ((_node_modules_mini_css_extract_plugin_dist_loader_js_ruleSet_1_rules_4_use_1_node_modules_css_loader_dist_cjs_js_ruleSet_1_rules_4_use_2_node_modules_sass_loader_dist_cjs_js_main_scss__WEBPACK_IMPORTED_MODULE_1___default().locals) || {});
+
+/***/ }),
+
+/***/ "./data.json":
+/*!*******************!*\
+  !*** ./data.json ***!
+  \*******************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = JSON.parse('[{"title":"Могу ли я отменить бронь?","description":"Каждый раз, когда гость совершает бронирование, оно подтверждается мгновенно — вы не можете его отклонить."},{"title":"Могу ли я вернуть деньги, если не подошёл автомобиль?","description":"При определенных обстоятельствах и условиях Вы можете вернуть автомобиль в салон и требовать возмещения в денежном виде всех издержек связанных с приобретением и эксплуатацией автомобиля или обменять некачественную машину на новую согласно закону \'О защите прав потребителей\'."},{"title":"Что делать, если случилось ДТП?","description":"Oстановить транспортное средство, включить аварийку, выставить знак аварийной остановки, чтобы предупредить других водителей об опасности. Знак устанавливается на расстоянии не менее 15 метров от ДТП в населенных пунктах и не менее 30 метров за их пределами. Неисполнение этих требований влечет административное наказание — предупреждение или штраф в размере 1000 рублей."},{"title":"Могу ли я оставить автомобиль в удобном для меня месте?","description":"Данный вопрос обсуждается с собственником, но как правило автомобиль нужно вернуть туда, где вы его получили."},{"title":"Что делать, если собственник просит заплатить ему напрямую?","description":"Если объявление о продаже квартиры размещено собственником в открытых источниках, риелтору платят только за проведение сделки по взаимному соглашению."},{"title":"Должен ли я заправлять автомобиль?","description":"Расходы на топливо всегда формально несёт компания, у которой вы берёт автомобиль в аренду. Эти траты заложены в стоимость поминутной аренды."}]');
 
 /***/ })
 
@@ -627,7 +638,7 @@ if (true) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "6adba61a093503fc9236"; }
+/******/ 		__webpack_require__.h = function() { return "88c3b15fb4989776a2df"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
