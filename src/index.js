@@ -4,7 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from "./components/App";
 import './scss/main.scss';
-import collapsible from './js/script.js';
 
 ReactDOM.render((
     <BrowserRouter>
@@ -14,4 +13,3 @@ ReactDOM.render((
  );
 
 // import * as $ from 'jquery';
-collapsible();

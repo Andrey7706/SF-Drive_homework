@@ -1,6 +1,7 @@
 import React from "react";
 import Header from './Header';
 import Footer from './Footer';
+import Accordion from "./Accordion";
 
 function Collapsible() {
     return (
@@ -20,8 +21,9 @@ function Collapsible() {
                     </div>
                 </div>
             </section>
+            <Accordion />
 
-            <section className="collapsible">
+            {/* <section className="collapsible">
                 <div className="wrap">
                     <div className="collapsible-set">
                         <button className="collapsible-button">
@@ -74,7 +76,7 @@ function Collapsible() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </main>
         <Footer />
         </>

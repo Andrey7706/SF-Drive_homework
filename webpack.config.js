@@ -87,7 +87,6 @@ module.exports = {
     mode: 'development',
     entry: {
         main: ['@babel/polyfill', './index.js'],
-        script: './js/script.js'
     },
     output: {
         filename: filename('js'),
