@@ -40,6 +40,11 @@ ul, ol {
     line-height: 1.5;
     text-align: center;
 }
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 767px) {
     .h1 {
